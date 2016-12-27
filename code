@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    int firstnum;
+
+    cout << "Hey Kelly!" << endl;
+    cout << I know I didn't get you anything for christmas or your birthday yet and I really want to still. Even if it is just a day out doing whatever you want, but this is the only thing I can make."
+    <<endl;
+    cout <<*If it is even working*"<< endl;
+    cout << endl << "Lets start with a test pick a number between 1-10 and hit it on the keyboard. I'll try and guess what it was okay?";
+    cin >> firstnum;
+
+    switch(firstnum){
+        case 1:
+            cout << "Did you pick the number 1? WOW I am so smart. Or maybe not...";
+            break;
+        case 2:
+            cout << "Wow I can't believe you picked 2 I knew you would pick it. I think I should become a psychic.";
+            break;
+        case 3:
+            cout << "3? Why 3? I don't like this number try again! Just kidding LOVE YOU KELLY";
+            break;
+        case 4:
+            cout << "Going for number 4 huh? If I keep this up maybe you will love me by the end of this <3";
+            break;
+        case 5:
+            cout << "Abba Kadabra! Your number is coming to me, I can see it now. You chose the number 5!";
+            break;
+        case 6:
+            cout << "I think you picked 6! I have 1 in 10 chance of being right. So I think the odds are in my favor.";
+            break;
+        case 7:
+            cout << "Did you pick lucky number 7? You did! Wait what do you mean you didn't!";
+            break;
+        case 8:
+            cout << "Can I get your number? What was that I didn't catch that 8...";
+            break;
+        case 9:
+            cout << "They say the number is 9 is the number of God, maybe you have a blessing coming your way.";
+            break;
+        case 10:
+            cout << "I can see you like big things...Always aiming for the biggest ;p";
+            break;
+        case default:
+            cout <<"Are you trying to break my code!";
+            break;
+    }
+    return 0;
+}
