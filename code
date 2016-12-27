@@ -5,12 +5,14 @@ using namespace std;
 int main()
 {   
     int firstnum;
+    char charcor, gamestate;
+    char q1,q2,q3,q4,q5,q6,q7,q8,q9,a1,a2,a3,a4,a5,a6,a7,a8,a9,b1,b2;
 
     cout << "Hey Kelly!" << endl;
-    cout << I know I didn't get you anything for christmas or your birthday yet and I really want to still. Even if it is just a day out doing whatever you want, but this is the only thing I can make."
+    cout << "I know I didn't get you anything for christmas or your birthday yet and I really want to still. Even if it is just a day out doing whatever you want, but this is the only thing I can make."
     <<endl;
-    cout <<*If it is even working*"<< endl;
-    cout << endl << "Lets start with a test pick a number between 1-10 and hit it on the keyboard. I'll try and guess what it was okay?";
+    cout <<"*If it is even working*"<< endl;
+    cout << endl << "Lets start with a test pick a number between 1-10 and hit it on the keyboard. I'll try and guess what it was okay?" << endl;
     cin >> firstnum;
 
     switch(firstnum){
@@ -44,9 +46,188 @@ int main()
         case 10:
             cout << "I can see you like big things...Always aiming for the biggest ;p";
             break;
-        case default:
+        default:
             cout <<"Are you trying to break my code!";
             break;
     }
+    
+    cout << endl << "Okay now please let me know! Did I get your number right?"<< endl;
+    cout << "Type 'y' for yes and 'n' for no!" << endl;
+    cin >> charcor;
+    
+    if(charcor == 'y')
+        cout << "Wow really that is cool we can go on!" << endl;
+    else if(charcor != 'y')
+        cout << "I may need to give you this another day..."<< endl;
+    
+    cout << "Well if we have gotten this far lets keep going! Do you want to play a game with me?" << endl;
+    cin >> gamestate;
+    
+    if(gamestate == 'y'){
+        
+        cout << "Wow thanks for playing not sure what I would have done if you said no" << endl;
+        
+        cout << "Okay the game is 20 Questions Are you ready to rumble!!! ...I mean play?" << endl << endl;
+        cin >> q1;
+            if(q1 =='y')
+                cout <<"One question down! 19 more to go" << endl;
+            else if(q1 != 'y'){
+                cout <<"Okay I'll wait! Just type y when you are ready"<<endl;
+                cin >> q1;
+            }
+        while(q1 == 'y'){
+            
+        cout << "Lets start simple! Is your name Kelly Campos" << endl;
+        cin >> q2;
+            if(q2 == 'y')
+                cout <<"Wrong your name is Kelly Campos Mari... ETC" << endl;
+            else if(q2!='y')
+                cout <<"Correct your name is B..aby k"<<endl;
+            
+        cout << "Are you a Peruvian Female?" << endl;
+        cin >> q3;
+            if(q3 == 'y')
+                cout <<"Yes you are! Got to love them foreigns!" << endl;
+            else if(q3!= 'y')
+                cout <<"Uhhh..." << endl;
+            
+        cout << "Is it December 27, 2016" << endl;
+        cin >> q4;
+            if(q4 == 'y')
+                cout <<"Yup that is true too, unless you are reading this in the future! Hi future kelly! How is life?" <<endl;
+            else if(q4!= 'y')
+                cout <<"Either I didn't get this to you on time or you are looking at this a second time or nth time!" <<endl;
+            
+        cout << "Okay lets get more juicy! " << "Are you a horn dog currently" << endl;
+        cin >> q5;
+            if(q5 == 'y')
+                cout <<"Oh cool I'll be there soon to satisfy your wants and/or needs. Just WAIT!" <<endl;
+            else if(q5!='y')
+                cout <<"Well that cool! We should watch a movie then!" <<endl;
+            
+                 
+        cout << "Okay just kidding! Next did you think I forgot about your presents?" << endl;
+        cin >> q6;
+            if(q6 == 'y')
+                cout <<"Well you are wrong! It is hard though because we are always together and I don't have car! SoonTM" <<endl;
+            else if(q6!= 'y')
+                cout <<"Really I am suprised I wouldn't be mad if you did!" << endl;
+                
+         cout << "Can I take your picture, you are my most beautiful subject" <<endl;
+        cin >> q7;
+            if(q7 == 'y')
+                cout <<"Great! Ill get my camera! Naked pics too right?" <<endl;
+            else if(q7!= 'y')
+                cout <<"Okay maybe later I'll be taking selfies if you need me" << endl;
+                
+        cout << "Would you like to go eat with me when this is done" << endl;
+        cin >> q8;
+            if(q8 == 'y')
+                cout <<"Of course you would..." <<endl;
+            else if(q8!= 'y')
+                cout <<"There is no way you chose this option!" <<endl;
+        
+        cout << "Lets get more ceral. Do you hate me?" << endl;
+        cin >> q9;
+            if(q9 == 'y')
+                cout <<"Im sorry I never wanted to be someone you hate or disappoints you. :(" <<endl;
+            else if(q9!= 'y')
+                cout <<"Really? I feel like you just picked this cause you felt bad" << endl;
+        
+        cout << "Do you still love me?" << endl;
+        cin >> a1;
+            if(a1=='y')
+                cout <<"I love you too! Which makes me sad and happy at the same time.!" <<endl;
+            else if(a1!= 'y')
+                cout <<"Well we either need to talk or we talked and I hope you find or found happiness in life" << endl;
+                
+        cout << "Do you know what we are to each other right now? Cause I am a bit confused over here!"<< endl;
+        cin >> a2;
+            if(a2 == 'y')
+                cout <<"Well feel free to let me know." <<endl;
+            else if(a2!= 'y')
+                cout <<"Yeah we should probably figure that out soon!" <<endl;
+                
+        cout << "Are you happy right now? With everything going on not just us" << endl;
+        cin >> a3;
+            if(a3 == 'y')
+                cout <<"I hope you clicked this one, but I know you aren't happy. If you did then I am estatic" << endl;
+            else if(a3!= 'y')
+                cout <<"Yeah I know. Its hard with everything going on to be happy. I hope you know I think about you and your family. I want everything to work out in your health and your father's and mother's." <<endl;
+				cout <<"I also hope you can find the passion for school again and not be scared of a grade. Cause I know you will make a great doctor! My children will need those free visits! Jk i am going to be childless" <<endl;
+                
+        cout << "Do you need a hug?" << endl;
+        cin >> a4;
+            if(a4 == 'y')
+                cout <<"*Hugs* *Tears* Love you!" <<endl;
+            else if(a4!= 'y')
+                cout <<"Well I will always be around if you do need one!" <<endl;
+                
+        cout << "Are you having fun?" << endl;
+        cin >> a5;
+            if(a5 == 'y')
+                cout <<"Hopefully this shit was frustrating to make" <<endl;
+            else if(a5!= 'y')
+                cout <<"Still more fun then making it!" <<endl;
+                
+        cout << "Do you think you will have a relationship forever, as friends or anything?" << endl;
+        cin >> a6;
+            if(a6 == 'y')
+                cout <<"I really hope so you are the most awesome interesting dank ass cake filled tree hugging animal loving person I have ever met. And I love it" <<endl;
+            else if(a6!= 'y')
+                cout <<"This is probably more likely, and it sucks" <<endl;
+                
+        cout << "Do you want this to be over already?" << endl;
+        cin >> a7;
+            if(a7 == 'y')
+                cout <<"It will soon!" <<endl;
+            else if(a7!= 'y')
+                cout <<"Wow thanks I wish I could have made it longer then!" <<endl;
+                
+        cout << "Do you think I love you?" << endl;
+        cin >> a8;
+            if(a8 == 'y')
+                cout <<"Yes I do, and not just as friends or cousins" <<endl;
+            else if(a8!= 'y')
+                cout <<"Well I have failed you more then I ever should!" <<endl;
+			
+		cout << "Do you have a favorite moment in our relationship?" << endl;
+        cin >> a9;
+            if(a9 == 'y')
+                cout <<"Tell me! Mine is the whole time I was working when you would come to NY and we would hang out, I know we werent technically together, but it was the most fun times for me. Maybe cause i had money :)" <<endl;
+            else if(a9!= 'y')
+                cout <<"Well I doubt that you picked this answer, if only not to seem mean" <<endl;
+			
+		cout << "Two questions left! Do you want to vacation with me if we are single when we have money?" << endl;
+        cin >> b1;
+            if(b1 == 'y')
+                cout <<"Yes I do too, even if its just as friends. You make me happy either way" <<endl;
+            else if(b1!= 'y')
+                cout <<"Well its okay to say no too, It may be too wierd or too much I just want you to be happy no matter what" <<endl;
+		
+		cout << "Lastly, Can you kiss me even if it for just one last time. Say no! If it will cause too much feelings I don't want to cause more pain to you" << endl;
+        cin >> b2;
+            if(b2 == 'y'){
+                cout <<"<3 <3 <3 <3 <3" <<endl;
+					break;
+			}
+            else if(b2!= 'y'){
+                cout <<"<3 That's okay I love you either way!" <<endl; 
+					break;
+			}
+        }
+        
+		cout << " It has been a crazy time we have spent together Kelly Campos, the hottest peruvian on earth. I know we may never be completely happy and sometimes I do the opposite, but I hope that I do some good sometimes at least."<<endl;
+		cout << "I know this has been a hard year for you, and I know next year will bring new things some good and some bad. I hope and wish the best for you always. You deserve the best I would treat you like the princess you are if"<<endl;
+		cout << "I had the means to. But I don't I just have my ears and my mouth and my body wink wink... Lol I just hope that you had a great birthday and Christmas. I hope next year's are even better and I hope you find the success you"<<endl;
+		cout << "are looking for in school. I know it is important to you and I know you can do it! I will always be your biggest fan, if only because i need free doctors visits :). I love you Kelly, The Goddess, Campos. I hope that I have" <<endl; 
+		cout << "brought you a shed of happiness in this. K bye fam" <<endl;
+        cout << endl <<"The End <3";
+		;
+    }    
+    
+    else if(gamestate != 'y')
+        cout << "Feels Bad Man" << endl;
+        
     return 0;
 }
